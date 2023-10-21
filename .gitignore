@@ -1,6 +1,10 @@
 ECHO est  ativado.
 # Compiled class file
 .class
+.classpath
+.project
+.settings/
+bin/
 
 # Log file
 .log
