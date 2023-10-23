@@ -14,8 +14,11 @@ public class SomaVect {
 		return this.numero;
 	}
 	
+
 	//metudo media
 	
-	//metdo saida (valores ,soma, media)
+	
+	
+	//metudo saida (valores ,soma, media)
 	
 }
