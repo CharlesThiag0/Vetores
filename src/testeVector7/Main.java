@@ -8,29 +8,26 @@ public class Main {
 		System.out.println("Quantos valores vai ter cada vetor?");
 		int n = sc.nextInt();
 		
-		SomaVect[] vectA = new SomaVect[n];
-		SomaVect[] vectB = new SomaVect[n];
-		SomaVect[] vectC = new SomaVect[n];
+		int[] vectA = new int[n];
+		int[] vectB = new int[n];
+		int[] vectC = new int[n];
 		
-		int numeroA, numeroB, soma;
 		System.out.println("Digite os valores do vetor A:");
-		for(int i = 0; i < vectA.length; i++) {
-			numeroA = sc.nextInt();
-			vectA[i] = new SomaVect(numeroA);
-		}
-		
-		System.out.println("Digite os valores do vetor B:");
-		for(int i = 0; i < vectB.length; i++) {
-			numeroB = sc.nextInt();
-			vectB[i] = new SomaVect(numeroB);
+		for(int i=0; i<vectA.length; i++) {
+			vectA[i] = sc.nextInt();
 		}
 	
-		System.out.println("VETOR RESULTANTE:");
-		for(int i = 0; i < vectC.length; i ++) {
-			soma = vectA[i].getNumero() + vectB[i].getNumero();
-			System.out.println(soma);
+		System.out.println("Digite os valores do vetor B:");
+		for(int i=0; i<vectB.length; i++) {
+			vectB[i] = sc.nextInt();
 		}
 		
+		System.out.println("VETOR RESULTANTE:");
+		for(int i=0; i<vectC.length; i++) {
+			vectC[i] = vectA[i] + vectB[i];
+			System.out.println(vectC[i]);
+		}
+			
 		sc.close();
 	}
 }
