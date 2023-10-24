@@ -14,7 +14,7 @@ public class MaiorPosicao {
 		for(int i = 0; i < vect.length; i ++) {
 			System.out.print("Digite um numero: ");
 			valor = sc.nextDouble();
-			vect[i] = new ValorDouble(valor, i);
+			vect[i] = new ValorDouble(valor);
 		}
 		
 		double maior = Integer.MIN_VALUE;
