@@ -38,10 +38,8 @@ public class Main {
 		//calculo para porcentagem
 		
 		// 16 anos pegar nome
-		String nomeMenor16;
 		for(int i = 0;i < vect.length; i ++) {
 			if(vect[i].getIdade() < 16) {
-			nomeMenor16 = vect[i].getNome();
 			System.out.printf("%s\n", vect[i].getNome());
 			}
 		}
