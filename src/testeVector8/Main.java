@@ -9,19 +9,17 @@ public class Main {
 		int n = sc.nextInt();
 		
 		double vect[] = new double[n];
-		
-		int qtd = 0;
+
 		for(int i = 0; i < vect.length; i++) {
 			System.out.println("Digite");
 			vect[i] = sc.nextDouble();
-			qtd ++;
 		}
 		
 		double media = 0;
 		for(int i = 0; i < vect.length; i++) {
 			media += vect[i];
 		}
-		double mediaFinal = media / qtd;
+		double mediaFinal = media / n;
 		System.out.printf("Media de: %.3f%n",mediaFinal);	
 		
 		System.out.println("Abaixo da media:");
