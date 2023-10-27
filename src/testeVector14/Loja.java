@@ -3,25 +3,24 @@ package testeVector14;
 public class Loja {
 	//nome produtos capacidadeMax qtd
 	private String nome;
-	private String produtos;
+	private Produto[] produtos;
 	private int capacidadeMax;
-	private int qtd;
-	public Loja(String nome, String produtos, int capacidadeMax, int qtd) {
+	private int numeroDeProdutos;
+	
+	public Loja(String nome, int capacidadeMax) {
 		this.nome = nome;
-		this.produtos = produtos;
 		this.capacidadeMax = capacidadeMax;
-		this.qtd = qtd;
+		this.produtos = new Produto[capacidadeMax];
+		this.numeroDeProdutos = 0;
 	}
+	
 	public String getNome() {
 		return this.nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public String getProdutos() {
+	}	
+	public Produto[] getProdutos() {
 		return this.produtos;
 	}
-	public void setProdutos(String produtos) {
+	public void setProdutos(Produto[] produtos) {
 		this.produtos = produtos;
 	}
 	public int getCapacidadeMax() {
@@ -31,11 +30,15 @@ public class Loja {
 		this.capacidadeMax = capacidadeMax;
 	}
 	public int getQtd() {
-		return this.qtd;
+		return this.numeroDeProdutos;
 	}
-	public void setQtd(int qtd) {
-		this.qtd = qtd;
+
+	public void addProduto(Produto produto) {
+		if(this.numeroDeProdutos < this.capacidadeMax) {
+		produtos[numeroDeProdutos] = produto;
+			this.numeroDeProdutos++;
+		} else {
+			System.out.println("Limite atingido");
+		}
 	}
-	
-	
 }
