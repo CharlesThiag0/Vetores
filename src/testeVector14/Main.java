@@ -1,5 +1,5 @@
 package testeVector14;
 
-public class Eletronico {
+public class Main {
 
 }
