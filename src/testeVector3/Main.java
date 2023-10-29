@@ -8,7 +8,7 @@ public class Main {
 		System.out.println("Quantos numeros voce vai digitar? ");
 		int numero = sc.nextInt();
 		double soma , media;
-		
+		 
 		SomaVect[] vect = new SomaVect[numero];//definindo o final do vect
 		
 		double n = 0;
